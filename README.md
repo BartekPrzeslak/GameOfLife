@@ -45,8 +45,6 @@
 
 ### Classes and Methods
 - **GameOfLifeApp**: Manages the Game of Life application, including game logic and graphical interface.
-    - `__init__(self)`: Initializes the game state, screen, and other parameters.
-    - `draw_button(self, rect, text)`: Draws a button on the screen.
     - `draw_grid(self)`: Draws the grid on the screen.
     - `next_generation(self)`: Computes the next generation of the game state based on rules.
     - `draw_cells(self)`: Draws the cells on the screen.
