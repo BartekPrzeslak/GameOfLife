@@ -35,25 +35,37 @@
  2. Linked code
  3. Short description of the changes. Which design patterns you used and how you applied them.
 
-# Libraries
-pygame: is used for the game's graphical interface and handling user input
+## Libraries Used
 
-numpy: is used for numerical operations on the game state array.
+- **pygame**: Utilized for creating the graphical user interface and handling game-related functionalities.
+- **numpy**: Used for creating and manipulating arrays for the game state.
+- **os**: Enables interaction with the operating system, used for file-related operations.
 
-os:  is used for interacting with the operating system, specifically for file-related operations.
+## Techniques and Methods
 
-# Methods:
+### Classes and Methods
+- **GameOfLifeApp**: Manages the Game of Life application, including game logic and graphical interface.
+    - `__init__(self)`: Initializes the game state, screen, and other parameters.
+    - `draw_button(self, rect, text)`: Draws a button on the screen.
+    - `draw_grid(self)`: Draws the grid on the screen.
+    - `next_generation(self)`: Computes the next generation of the game state based on rules.
+    - `draw_cells(self)`: Draws the cells on the screen.
+    - `run(self)`: Main loop for running the game.
 
-**GameOfLife class methods**:
+### Attributes
+- `width, height`: Screen dimensions.
+- `n_cells_x, n_cells_y`: Grid dimensions.
+- `cell_width, cell_height`: Dimensions of individual cells in the grid.
+- `game_state`: Current state of the Game of Life.
+- `white, black, gray, green`: Colors used in the graphical interface.
+- `button_width, button_height`: Dimensions of buttons.
+- `button_gap`: Gap between buttons.
+- `button_x, button_y`: Position of buttons on the screen.
+- `clock`: Controls the frame rate.
+- `paused`: Boolean to control the pause state.
 
-- `__new__(cls)`: A special method used for creating and returning a new instance of the class. In this case, it ensures that only one instance of the GameOfLife class is created (Singleton pattern).
-- `initialize(self)`: Initializes the game, including Pygame, screen dimensions, grid dimensions, game state, colors, button dimensions, and clock.
-- `draw_button(self, rect, text)`: Draws a button on the screen using Pygame.
-- `draw_grid(self)`: Draws the grid on the screen using Pygame.
-- `next_generation(self)`: Calculates the next generation of the Game of Life based on the rules.
-- `draw_cells(self)`: Draws the live cells on the screen using Pygame.
-- `run(self)`: The main loop that runs the game, handling events, updating the screen, and controlling the frame rate.
+### Rectangles for Buttons
+- `pause_button_rect, save_button_rect, load_button_rect`: Rectangles for Pause/Resume, Save, and Load buttons.
 
-# How to run it
-To run the Game of Life, execute the main file `gameoflife.py`
-
+## How to run it
+To run the Game of Life, execute the main file `gameoflife.py`.
