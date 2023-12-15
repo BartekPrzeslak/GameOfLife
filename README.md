@@ -54,5 +54,6 @@ os:  is used for interacting with the operating system, specifically for file-re
 - `draw_cells(self)`: Draws the live cells on the screen using Pygame.
 - `run(self)`: The main loop that runs the game, handling events, updating the screen, and controlling the frame rate.
 
-
+# How to run it
+To run the Game of Life, execute the main file `gameoflife.py`
 
