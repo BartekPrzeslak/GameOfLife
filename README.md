@@ -46,13 +46,13 @@ os:  is used for interacting with the operating system, specifically for file-re
 
 **GameOfLife class methods**:
 
-'__new__(cls)': A special method used for creating and returning a new instance of the class. In this case, it ensures that only one instance of the GameOfLife class is created (Singleton pattern).
-'initialize(self)': Initializes the game, including Pygame, screen dimensions, grid dimensions, game state, colors, button dimensions, and clock.
-'draw_button(self, rect, text)': Draws a button on the screen using Pygame.
-'draw_grid(self)': Draws the grid on the screen using Pygame.
-'next_generation(self)': Calculates the next generation of the Game of Life based on the rules.
-'draw_cells(self)': Draws the live cells on the screen using Pygame.
-'run(self)': The main loop that runs the game, handling events, updating the screen, and controlling the frame rate.
+`__new__(cls)`: A special method used for creating and returning a new instance of the class. In this case, it ensures that only one instance of the GameOfLife class is created (Singleton pattern).
+`initialize(self)`: Initializes the game, including Pygame, screen dimensions, grid dimensions, game state, colors, button dimensions, and clock.
+`draw_button(self, rect, text)`: Draws a button on the screen using Pygame.
+`draw_grid(self)`: Draws the grid on the screen using Pygame.
+`next_generation(self)`: Calculates the next generation of the Game of Life based on the rules.
+`draw_cells(self)`: Draws the live cells on the screen using Pygame.
+`run(self)`: The main loop that runs the game, handling events, updating the screen, and controlling the frame rate.
 
 
 
